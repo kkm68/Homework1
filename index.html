@@ -3,27 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Condensed|Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Homework</title>
 </head>
 <body>
-<div>
-    <p><h1>Вакансия: Junior Web Developer</h1></p>
-    <picture>
-        <img src="C:\Users\Макс\WebstormProjects\untitled\img\P61009-152904.jpg" width="10%" align="left" vspace="5" hspace="5">
-    </picture>
-    <p>Имя: Максим Ляшев</p>
-    <link href="github">
-    <p>Опыт работы: Нет</p>
-    <p>Дата собеседования:</p>
-    <input type="date">
-</div>
-<div>
-    <p>Уровень английского</p>
-    <p><input name="eng" type="radio" value="bad">Плохо</p>
-    <p><input name="eng" type="radio" value="med">Средне</p>
-    <p><input name="eng" type="radio" value="good">Хорошо</p>
-    <p><input name="eng" type="radio" value="perf">Превосходно</p>
-    <p>Ключевые навыки:</p>
+<div class="a1">
+        <div class="block">
+            <h2>Вакансия: Junior Web Developer</h2>
+        </div>
+        <div class="block-pic">
+            <img src="/img/P61009-152904.jpg" width="30%" alt="Макс">
+        </div>
+        <div class="block-name">
+            <h4>Максим Ляшев</h4>
+            <a href="https://github.com/kkm68/Homework1">GitHub Link</a>
+            <p>Опыт работы: Нет</p>
+        </div>
+        <div class="block">
+            <h5>Дата собеседования:</h5>
+            <input type="date">
+        </div>
+    <div class="block">
+    <h5>Уровень английского</h5>
+        <span>
+        <input name="eng" type="radio" value="bad">Плохо
+        <input name="eng" type="radio" value="med">Средне
+        <input name="eng" type="radio" value="good">Хорошо
+        <input name="eng" type="radio" value="perf">Превосходно
+        </span>
+    </div>
+    <div class="block">
+    <h5>Ключевые навыки:</h5>
     <ul>
         <li>HTML</li>
         <li>CSS/LESS</li>
@@ -31,17 +42,40 @@
         <li>Другие</li>
     </ul>
     <input type="text">
-    <p>Коммуникабельность:</p>
-    <p>Желаемая з/п</p>
-    <p>Подходит по критерям:</p>
-    <p><input type="checkbox" name="crit" value="eng">Знание английского</p>
-    <p><input type="checkbox" name="crit" value="salary">Оклад</p>
-    <p><input type="checkbox" name="crit" value="skills">Навыки</p>
-    <p><input type="checkbox" name="crit" value="man">Сразу видно, что свой человек</p>
-    <p>Образование, курсы и т.п.</p>
-    <p></p>
+    </div>
+    <div class="block">
+    <span>
+        <h5>Коммуникабельность:</h5>
+        <select>
+            <option>Зануда</option>
+            <option>Нормальный</option>
+            <option>Болтун</option>
+        </select>
+    </span>
+    </div>
+    <div class="block">
+    <h5>Желаемая з/п:</h5>
+    <span>
+        <input placeholder="Введите значение" name="salary" type="number">
+    </span>
+    </div>
+    <div class="block">
+    <h5>Подходит по критерям:</h5>
+    <span>
+        <input type="checkbox" name="crit" value="eng">Знание английского
+        <input type="checkbox" name="crit" value="salary">Оклад
+        <input type="checkbox" name="crit" value="skills">Навыки
+        <input type="checkbox" name="crit" value="man">Сразу видно, что свой человек
+    </span>
+    </div>
+    <div class="block">
+    <h5>Образование, курсы и т.п.</h5>
+    <table class="table_study">
+        <tr><td>#</td><td>Сроки обучения</td><td>Наименование учебного заведения</td></tr>
+        <tr><td>1</td><td>2001-2006</td><td>РЭА им. Плеханова</td></tr>
+        <tr><td>2</td><td>2019-2020</td><td>LevelUP</td></tr>
+    </table>
+    </div>
 </div>
-
-
 </body>
 </html>
