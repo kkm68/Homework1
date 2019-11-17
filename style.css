@@ -10,7 +10,12 @@ body {
     background-clip: initial;
     background-color: initial;
     margin: 0;
-    }
+}
+
+input {
+    margin-right: 12px;
+}
+
 .a1 {
     width: 40%;
     font-family: 'Source Sans Pro', sans-serif;
@@ -24,14 +29,44 @@ body {
     margin-top: 24px;
     left: 30%;
     margin-bottom: 24px;
-    }
+}
+
 .block-pic {
-    float: left;
-    }
-.block
-    {
-    margin: 35px;
-    }
+    display: inline-block;
+    width: 30%;
+    padding-left: 36px;
+}
+
+.block-pic :hover {
+    transform: scale(-1, 1)
+}
+
+.block-name {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 18px;
+    margin-top: -18px;
+    line-height: 10px;
+}
+
+.button {
+    background: linear-gradient(to top left, #00BBD6, #EBFFFF);
+    border-radius: 5px;
+    border: 1px hidden #666;
+    outline: 0 !important;
+}
+
+.block {
+    margin: 0px 24px 12px 24px;
+    vertical-align: middle;
+    line-height: 16px;
+}
+.inline {
+    display: inline-block;
+    margin-right: 12px;
+    vertical-align: middle;
+}
 .table_study
     {
     font-family: "Noto Sans", "Lucida Grande", Sans-Serif;
@@ -62,3 +97,4 @@ body {
 .table_study tr:hover td {
     text-decoration: underline;
 }
+

@@ -13,54 +13,59 @@
             <h2>Вакансия: Junior Web Developer</h2>
         </div>
         <div class="block-pic">
-            <img src="/img/P61009-152904.jpg" width="30%" alt="Макс">
+            <img src="./img/P61009-152904.jpg" alt="Макс" style="width: 100%">
         </div>
         <div class="block-name">
-            <h4>Максим Ляшев</h4>
-            <a href="https://github.com/kkm68/Homework1">GitHub Link</a>
+            <p><b>Максим Ляшев</b></p>
+            <a href="https://github.com/kkm68/">Ссылка на репозиторий GitHub</a>
             <p>Опыт работы: Нет</p>
         </div>
         <div class="block">
-            <h5>Дата собеседования:</h5>
-            <input type="date">
+            <div class="inline"><p><b>Дата собеседования:</b></p></div>
+            <div class="inline"><input type="date"></div>
         </div>
     <div class="block">
-    <h5>Уровень английского</h5>
+    <p><b>Уровень английского:</b></p>
         <span>
-        <input name="eng" type="radio" value="bad">Плохо
-        <input name="eng" type="radio" value="med">Средне
-        <input name="eng" type="radio" value="good">Хорошо
-        <input name="eng" type="radio" value="perf">Превосходно
+            <input name="eng" id="bad" type="radio" value="bad"><label for="bad">Плохо</label>
+            <input name="eng" id="med" type="radio" value="med"><label for="med">Средне</label>
+            <input name="eng" id="good" type="radio" value="good"><label for="good">Хорошо</label>
+            <input name="eng" id="perf" type="radio" value="perf"><label for="perf">Превосходно</label>
         </span>
     </div>
     <div class="block">
-    <h5>Ключевые навыки:</h5>
+        <p><b>Ключевые навыки:</b></p>
     <ul>
         <li>HTML</li>
         <li>CSS/LESS</li>
         <li>Javascript</li>
         <li>Другие</li>
     </ul>
-    <input type="text">
+    <input placeholder="Введите навык" name="skill" type="text">
+        <input class="button" type="button" value="Добавить в список" name="skill-btn">
     </div>
     <div class="block">
-    <span>
-        <h5>Коммуникабельность:</h5>
+    <div class="inline">
+        <p><b>Коммуникабельность:</b></p>
+    </div>
+        <div class="inline">
         <select>
             <option>Зануда</option>
             <option>Нормальный</option>
             <option>Болтун</option>
         </select>
-    </span>
+        </div>
     </div>
     <div class="block">
-    <h5>Желаемая з/п:</h5>
-    <span>
+        <div class="inline">
+        <p><b>Желаемая з/п:</b></p>
+        </div>
+        <div class="inline">
         <input placeholder="Введите значение" name="salary" type="number">
-    </span>
+        </div>
     </div>
     <div class="block">
-    <h5>Подходит по критерям:</h5>
+        <p><b>Подходит по критерям:</b></p>
     <span>
         <input type="checkbox" name="crit" value="eng">Знание английского
         <input type="checkbox" name="crit" value="salary">Оклад
@@ -69,7 +74,7 @@
     </span>
     </div>
     <div class="block">
-    <h5>Образование, курсы и т.п.</h5>
+        <p><b>Образование, курсы и т.п.</b></p>
     <table class="table_study">
         <tr><td>#</td><td>Сроки обучения</td><td>Наименование учебного заведения</td></tr>
         <tr><td>1</td><td>2001-2006</td><td>РЭА им. Плеханова</td></tr>
